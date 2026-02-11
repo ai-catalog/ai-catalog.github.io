@@ -1,37 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Catalog</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #fafafa;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            color: #666;
-            font-size: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>AI Catalog — Curated Directory of the Best AI Tools for Productivity, Art & More</title>
+  <meta name="description" content="AI Catalog is a curated directory of the best AI tools. Browse trusted AI tools by category — productivity, art, coding, chatbots, and agents.">
+  <meta name="keywords" content="AI tools, AI directory, curated AI tools, best AI tools, AI categories, AI productivity tools, AI art tools, AI chatbots, AI agents">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Catalog — Curated Directory of the Best AI Tools">
+  <meta property="og:description" content="A curated directory of useful AI tools. No noise — just a clean catalog of trusted tools organized by category.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/og-image.png">
+  <meta property="og:site_name" content="AI Catalog">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Catalog — Curated Directory of the Best AI Tools">
+  <meta name="twitter:description" content="A curated directory of useful AI tools. Browse by category — productivity, art, coding, chatbots, and agents.">
+  <meta name="twitter:image" content="https://example.com/og-image.png">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AI Catalog",
+    "url": "https://example.com/",
+    "description": "A curated directory of the best AI tools organized by category.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://example.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>AI Catalog</h1>
-        <p>This site is under construction.</p>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo"><span class="prompt">&gt;_</span> ai-catalog</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#top-picks">top_picks</a></li>
+        <li><a href="#categories">categories</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#disclosure">disclosure</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <p class="hero-prefix">// ai-powered toolkit directory</p>
+      <h1 class="hero-title">AI Catalog<span class="cursor">_</span></h1>
+      <p class="hero-tagline">Curated AI tools. Zero noise. Ship faster.</p>
+      <div class="hero-actions">
+        <a href="#top-picks" class="btn btn-primary">&gt; top_picks()</a>
+        <a href="#categories" class="btn btn-ghost">&gt; all_categories</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== TOP PICKS (rendered by script.js from config.js) ===== -->
+    <section class="section" id="top-picks">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> Top Picks</h2>
+        <p class="section-desc">Hand-picked. Battle-tested. Actually useful.</p>
+        <div id="picks-container"></div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIES (rendered by script.js from config.js) ===== -->
+    <section class="section section-alt" id="categories">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> Browse by Category</h2>
+        <p class="section-desc">Find the right AI tools for the job.</p>
+        <div id="categories-container"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> How It Works</h2>
+        <div class="about-grid">
+          <div class="about-item">
+            <div class="about-icon">&gt;_</div>
+            <h3>Curated, Not Scraped</h3>
+            <p>Every tool is hand-selected. We don't index the whole internet — we pick what's actually worth your time.</p>
+          </div>
+          <div class="about-item">
+            <div class="about-icon">++</div>
+            <h3>Built for Builders</h3>
+            <p>AI tools that make a real difference for productivity, creativity, and development workflows.</p>
+          </div>
+          <div class="about-item">
+            <div class="about-icon">!=</div>
+            <h3>No Pay-to-Play</h3>
+            <p>Selection is based on usefulness, not sponsorships. Affiliate links exist but never influence what gets listed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DISCLOSURE ===== -->
+    <section class="section section-alt" id="disclosure">
+      <div class="container">
+        <h2 class="section-title"><span class="accent">#</span> Transparency &amp; Affiliate Links</h2>
+        <div class="disclosure-box">
+          <p>Some links on this site are affiliate links — we may earn a small commission if you sign up through them, at no extra cost to you. We only list tools we genuinely believe in. Affiliate partnerships never influence our selection. Your trust &gt; any commission.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">&gt;_ ai-catalog</span>
+          <p class="footer-tagline">A curated directory of the best AI tools.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#top-picks">top_picks</a>
+          <a href="#categories">categories</a>
+          <a href="#about">about</a>
+          <a href="#disclosure">disclosure</a>
+        </nav>
+        <div class="footer-contact" id="footer-email"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AI Catalog. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
