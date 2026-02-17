@@ -40,7 +40,7 @@ var TOOLS = [
     categories:  ["top_picks", "chatbots"]
   },
 
-  // ─── GRAPHICS ────────────────────────────────────────────────
+  // ─── ART ────────────────────────────────────────────────
   {
     name:        "Midjourney",
     description: "High‑quality artistic image generation with advanced style control.",
@@ -63,6 +63,14 @@ var TOOLS = [
     link:        "https://leonardo.ai",
     price:       "$0-76",
     tags:        ["freemium"],
+    categories:  ["art"]
+  },
+  {
+    name:        "Higgsfield AI",
+    description: "Video generation platform offering high‑quality AI‑driven video creation.",
+    link:        "https://higgsfield.ai",
+    price:       "$10-150",
+    tags:        ["subscription"],
     categories:  ["art"]
   },
 
