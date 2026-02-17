@@ -1,5 +1,7 @@
 # AI Catalog
 
+--> https://ai-catalog.github.io/
+
 A minimal, curated directory of AI tools.  
 The goal is to keep things simple: a clean list of genuinely useful tools, a few trusted affiliate recommendations, and no unnecessary clutter.
 
@@ -24,4 +26,5 @@ The structure, layout, and content will evolve as the project grows.
 ## Contact
 For questions or partnership inquiries:  
 ai-catalog@proton.me
+
 
