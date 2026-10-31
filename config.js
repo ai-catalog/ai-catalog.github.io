@@ -100,6 +100,15 @@ var TOOLS = [
     categories:  ["coding"]
   },
 
+  {
+    name:        "agent-qa",
+    description: "Web and mobile AI testing from vostride with persistent memidex memory, validated self-improvement, MCP, and reviewable run evidence.",
+    link:        "https://vostride.com",
+    price:       "Model costs vary",
+    tags:        ["usage-based"],
+    categories:  ["coding"]
+  },
+
   // ─── CHATBOTS ────────────────────────────────────────────────
   {
     name:        "Grok",
